@@ -1,0 +1,38 @@
+/*CSS样式重置*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;  /*兼容webkit浏览器*/
+}
+body{
+    font-family:"Microsoft YaHei","tahoma,arial","Hiragino Sans GB","\\5b8b\4f53","sans-serif";
+    /*font-size: 4vw;*/
+    color: #000;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+input{
+    border: none;
+    outline: none;
+}
+/*公共样式*/
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix::before,
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
