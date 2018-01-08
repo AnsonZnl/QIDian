@@ -4,7 +4,8 @@ body {
   font-size: 0.14rem; }
 
 .content {
-  background: #f6f7f9; }
+  background: #f6f7f9;
+  padding-bottom: 0.03rem; }
 
 header, .banner {
   width: 6rem; }
@@ -56,25 +57,49 @@ header {
       background: url(../img/user_book.png) -0.55rem 0.01rem no-repeat;
       background-size: 1rem .4rem; }
 
+.search-guide {
+  font-size: .2rem;
+  line-height: .55rem;
+  display: block;
+  margin: .1rem .2rem;
+  text-align: center;
+  color: #969ba3;
+  border-radius: .07rem;
+  background-color: #fff; }
+  .search-guide .sousuo {
+    width: .25rem;
+    line-height: .5rem;
+    display: inline-block; }
+    .search-guide .sousuo img {
+      vertical-align: middle; }
+  .search-guide span {
+    display: inline-block; }
+
+nav a {
+  display: inline-block;
+  font-size: .26rem;
+  color: black; }
+
 .slide-box {
-  margin: 10px;
+  margin: 0.1rem;
   display: -webkit-box;
   overflow-x: scroll;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch; }
 
 .slide-item {
-  width: 200px;
-  height: 200px;
+  width: 2rem;
+  height: 2rem;
   text-align: center;
   border: 1px solid #ccc;
-  margin-right: 30px; }
+  margin-right: 0.3rem;
+  font-size: 0.2rem; }
 
 ::-webkit-scrollbar {
   width: 0;
   height: 0; }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 5px;
+  border-radius: 0.05rem;
   -webkit-box-shadow: inset 0 0 0 transparent;
   background: transparent; }

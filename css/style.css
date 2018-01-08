@@ -36,3 +36,7 @@ input{
     display: block;
     clear: both;
 }
+img{
+    width: 100%;
+    height:100%;
+}
