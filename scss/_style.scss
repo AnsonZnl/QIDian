@@ -96,10 +96,50 @@ header{
 }
 //nav
 nav{
+  margin: .17rem 0;
+  padding: .50em .315rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   a{
     display: inline-block;
     font-size:.26rem;
     color: black;
+    text-align: center;
+    .icon-img{
+      background-image: url(../img/iconimg3.png);
+      background-size: 2rem 1.9rem;
+      background-position: 0 0;
+      display: block;
+      margin: auto;
+      width: .6rem;
+      height: 0.6rem;
+    }
+    .nav-i-bg1{
+      background-position: 100% 44%;
+    }
+    .nav-i-bg2{
+      background-position: 0 50%;
+    }
+    .nav-i-bg3{
+      background-position: -4% 100%;
+    }
+    .nav-i-bg4{
+      background-position: 50% 50%;
+    }
+  }
+}
+//banner-img 广告
+.banner-img{
+  width: 100%;
+
+  padding: .2rem 0;
+  background: #f6f7f9;
+  a{
+    display: block;
+    width: 94%;
+    height: 8.5vh;
+    margin: auto;
   }
 }
 //移动端滑动

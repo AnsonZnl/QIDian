@@ -75,10 +75,43 @@ header {
   .search-guide span {
     display: inline-block; }
 
-nav a {
-  display: inline-block;
-  font-size: .26rem;
-  color: black; }
+nav {
+  margin: .17rem 0;
+  padding: .50em .315rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  nav a {
+    display: inline-block;
+    font-size: .26rem;
+    color: black;
+    text-align: center; }
+    nav a .icon-img {
+      background-image: url(../img/iconimg3.png);
+      background-size: 2rem 1.9rem;
+      background-position: 0 0;
+      display: block;
+      margin: auto;
+      width: .6rem;
+      height: 0.6rem; }
+    nav a .nav-i-bg1 {
+      background-position: 100% 44%; }
+    nav a .nav-i-bg2 {
+      background-position: 0 50%; }
+    nav a .nav-i-bg3 {
+      background-position: -4% 100%; }
+    nav a .nav-i-bg4 {
+      background-position: 50% 50%; }
+
+.banner-img {
+  width: 100%;
+  padding: .2rem 0;
+  background: #f6f7f9; }
+  .banner-img a {
+    display: block;
+    width: 94%;
+    height: 8.5vh;
+    margin: auto; }
 
 .slide-box {
   margin: 0.1rem;
