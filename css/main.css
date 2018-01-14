@@ -226,20 +226,22 @@ nav {
   /*排行榜*/ }
   .module .module-header .time-red {
     display: inline-block;
+    padding: 0.02rem 0;
     width: 0.26rem;
     background-color: #ed424b;
     color: #fff;
-    font-size: .12rem;
+    font-size: .15rem;
     text-align: center; }
   .module .module-header .time-black {
     display: inline-block;
     width: 0.26rem;
+    padding: 0.02rem 0;
     background: #000;
     color: #fff;
-    font-size: .012rem;
+    font-size: .15rem;
     text-align: center; }
   .module .module-nav {
-    margin-top: 0.1rem;
+    margin-top: 0.25rem;
     text-align: center; }
     .module .module-nav a {
       display: inline-block;
@@ -247,7 +249,8 @@ nav {
       margin-left: -.06rem;
       text-align: center;
       color: #ed424b;
-      border: 1px solid #ed424b; }
+      border: 1px solid #ed424b;
+      font-size: 0.18rem; }
     .module .module-nav .borlenone {
       border-right: none; }
     .module .module-nav .borleft {

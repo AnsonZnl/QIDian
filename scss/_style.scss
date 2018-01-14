@@ -274,24 +274,26 @@ nav{
   .module-header{
     .time-red{
       display: inline-block;
+      padding: 0.02rem 0;
       width: 0.26rem;
       background-color: #ed424b;
       color: #fff;
-      font-size:.12rem;
+      font-size:.15rem;
       text-align: center;
     }
-    .time-black{
+    .time-black {
       display: inline-block;
       width: 0.26rem;
+      padding: 0.02rem 0;
       background: #000;
       color: #fff;
-      font-size:.012rem;
+      font-size: .15rem;
       text-align: center;
     }
   }
   /*排行榜*/
   .module-nav{
-    margin-top: 0.1rem;
+    margin-top: 0.25rem;
     text-align: center;
     a{
       display: inline-block;
@@ -300,6 +302,7 @@ nav{
       text-align: center;
       color: #ed424b;
       border: 1px solid #ed424b;
+      font-size:0.18rem;
     }
     .borlenone{
       border-right:none;

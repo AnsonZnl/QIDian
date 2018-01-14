@@ -30,6 +30,9 @@ input{
 .fr{
     float: right;
 }
+.fz18{
+    font-size: .20rem;
+}
 .clearfix::before,
 .clearfix::after{
     content: '';
