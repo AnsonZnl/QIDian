@@ -206,6 +206,10 @@ nav{
     font-size: .22rem;
     margin-left: .2rem;
     color: #969ba3;
+    em{
+      color: black;
+      font-style:normal
+    }
   }
 }
 .module-content{
@@ -319,5 +323,66 @@ nav{
       background: #ed424b;
       color: #fff;
     }
+  }
+}
+//新书抢先
+.module{
+  .book-content{
+    display: block;
+    padding: 0.25rem 0;
+    margin: 0 0.25rem;
+    .book-img{
+      display: inline-block;
+      width: 1.3rem;
+    }
+    .book-txt{
+      width: 4.2rem;
+      display: inline-block;
+      margin-left:0.2rem;
+      h4{
+        font-size: 0.27rem;
+        color: black;
+      }
+      p{
+        margin: 0.12rem 0;
+        line-height: 0.36rem;
+        font-size: 0.24rem;
+        color: #969ba3;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      span{
+        color: #969ba3;
+      }
+      i{
+        float: left;
+        width: 0.25rem;
+      }
+      .tag-small{
+        font-style: normal;
+        padding: 0 0.06rem;
+        font-size:0.1rem;
+      }
+      .gray{
+        border: solid #969ba3 0.01rem ;
+        color: #969ba3;
+      }
+
+      .red{
+        border: solid #ed424b 0.01rem ;
+        color: #ed424b;
+      }
+      .blue{
+        border: solid #4284ed 0.01rem ;
+        color: #4284ed;
+      }
+
+    }
+  }
+
+  .new_border{
+    border-top: solid #969ba3 0.005rem;
+    border-bottom: solid #969ba3 0.005rem;
   }
 }
