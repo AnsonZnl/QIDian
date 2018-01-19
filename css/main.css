@@ -25,7 +25,7 @@ header {
   header .boy-gril {
     width: 47%;
     line-height: .4rem;
-    padding: 0  .2rem;
+    padding: 0 .2rem;
     font-size: .23rem; }
     header .boy-gril a {
       display: inline-block;
@@ -115,7 +115,7 @@ nav {
   .banner-img a {
     display: block;
     width: 93%;
-    height: 1rem;
+    height: 0.9rem;
     margin: auto; }
 
 .module {
@@ -221,7 +221,7 @@ nav {
     padding: .1rem 0;
     font-size: .2rem;
     border-radius: 0.3rem;
-    border: 1px solid  #ed424b;
+    border: 1px solid #ed424b;
     color: #ed424b;
     text-align: center; }
 
@@ -253,9 +253,12 @@ nav {
       text-align: center;
       color: #ed424b;
       border: 1px solid #ed424b;
-      font-size: 0.18rem; }
+      font-size: 0.18rem;
+      width: 22%; }
     .module .module-nav .borlenone {
       border-right: none; }
+    .module .module-nav .w30 {
+      width: 30%; }
     .module .module-nav .borleft {
       border-top-left-radius: 0.1rem;
       border-bottom-left-radius: 0.1rem; }
@@ -289,14 +292,16 @@ nav {
       text-overflow: ellipsis;
       white-space: nowrap; }
     .module .book-content .book-txt span {
-      color: #969ba3; }
+      color: #969ba3;
+      vertical-align: middle;
+      font-size: 0.17rem; }
     .module .book-content .book-txt i {
       float: left;
       width: 0.25rem; }
     .module .book-content .book-txt .tag-small {
       font-style: normal;
       padding: 0 0.06rem;
-      font-size: 0.1rem; }
+      font-size: 0.17rem; }
     .module .book-content .book-txt .gray {
       border: solid #969ba3 0.01rem;
       color: #969ba3; }
@@ -308,5 +313,100 @@ nav {
       color: #4284ed; }
 
 .module .new_border {
-  border-top: solid #969ba3 0.005rem;
-  border-bottom: solid #969ba3 0.005rem; }
+  border-top: 1px solid #f0f1f2;
+  border-bottom: 1px solid #f0f1f2; }
+
+.module .jxzt-box {
+  text-align: center;
+  margin-top: 0.05rem; }
+  .module .jxzt-box .jxzt {
+    display: inline-block;
+    width: 45%;
+    padding: 0.06rem; }
+
+.footer-top {
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.22rem;
+  text-align: center;
+  border-bottom: 1px solid #f0f1f2; }
+  .footer-top span {
+    color: black;
+    font-weight: 700; }
+  .footer-top a {
+    color: #4284ed; }
+
+footer {
+  padding: 0 0.25rem;
+  text-align: center; }
+  footer .footer-link .dark {
+    color: #33373d; }
+  footer .footer-link a {
+    display: inline-block;
+    width: 18%;
+    padding: 0.2rem 0;
+    text-align: center;
+    font-size: 0.22rem;
+    color: #969ba3; }
+  footer .footer-copy {
+    color: #969ba3;
+    font-size: 0.2rem; }
+  footer .footer-copy {
+    padding-top: 0.2rem;
+    padding-bottom: 0.15rem; }
+
+.footerApp {
+  background-color: #f6f7f9;
+  padding: 0.2rem 0.25rem; }
+  .footerApp .fl a {
+    width: 0.65rem;
+    display: inline-block;
+    margin-right: 0.2rem; }
+  .footerApp .fl div p {
+    height: 0.3rem;
+    line-height: 0.3rem;
+    font-size: 0.22rem; }
+  .footerApp .fl div p:nth-child(1) {
+    font-weight: 700;
+    color: black; }
+  .footerApp .fl div p:nth-child(2) {
+    color: #969ba3;
+    font-size: 0.2rem; }
+  .footerApp .fr a {
+    display: block;
+    margin-top: 0.03rem;
+    color: #fff;
+    font-size: 0.24rem;
+    background: #ed424b;
+    padding: 0.07rem 0.3rem;
+    border-radius: 0.2rem; }
+
+#btn-book {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 0.5rem;
+  box-sizing: border-box;
+  padding: 0.15rem;
+  display: block;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  background: #ed424b; }
+
+#top {
+  position: fixed;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  display: block;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  line-height: 0.7rem;
+  text-align: center;
+  background: #000;
+  opacity: 0.6;
+  transform: rotate(90deg);
+  font-size: 0.4rem;
+  color: #fff; }
