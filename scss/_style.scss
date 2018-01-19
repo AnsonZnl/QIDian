@@ -211,7 +211,7 @@ nav {
     float: right;
     width: .22rem;
     height: .3rem;
-    margin-top: .1rem;
+    margin-top:0;
     img {
       display: block;
       width: 100%;
@@ -256,7 +256,7 @@ nav {
 }
 
 .slide-item {
-  width: 1.4rem;
+  width: 1.5rem;
   text-align: left;
   font-size: 0.23rem;
   a {
@@ -312,23 +312,21 @@ nav {
   .module-header {
     .time-red {
       display: inline-block;
-      padding: 0.02rem 0;
+      padding: 0.02rem;
       width: 0.26rem;
       background-color: #ed424b;
       color: #fff;
       font-size: .17rem;
       text-align: center;
-      margin: 0 0.02rem;
     }
     .time-black {
       display: inline-block;
       width: 0.26rem;
-      padding: 0.02rem 0;
+      padding: 0.02rem;
       background: #000;
       color: #fff;
       font-size: .17rem;
       text-align: center;
-      margin: 0 0.02rem;
     }
   }
   /*排行榜*/
@@ -342,7 +340,7 @@ nav {
       text-align: center;
       color: #ed424b;
       border: 1px solid #ed424b;
-      font-size: 0.18rem;
+      font-size: 0.2rem;
       width: 22%;
     }
     .borlenone {
@@ -398,7 +396,7 @@ nav {
       span {
         color: #969ba3;
         vertical-align: -webkit-baseline-middle;
-        font-size: 0.17rem;
+        font-size: 0.2rem;
       }
       i {
         float: left;
@@ -406,7 +404,7 @@ nav {
       }
       .tag-small {
         font-style: normal;
-        padding: 0 0.06rem;
+        padding: 0.02rem 0.06rem;
         font-size: 0.17rem;
       }
       .gray {
@@ -528,6 +526,8 @@ footer {
   position: fixed;
   bottom: 1.5rem;
   right: 0.5rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0.12rem;
   display: block;

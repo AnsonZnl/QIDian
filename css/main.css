@@ -166,7 +166,7 @@ nav {
     float: right;
     width: .22rem;
     height: .3rem;
-    margin-top: .1rem; }
+    margin-top: 0; }
     .module .module-img img {
       display: block;
       width: 100%; }
@@ -200,7 +200,7 @@ nav {
   -webkit-overflow-scrolling: touch; }
 
 .slide-item {
-  width: 1.4rem;
+  width: 1.5rem;
   text-align: left;
   font-size: 0.23rem; }
   .slide-item a {
@@ -245,22 +245,20 @@ nav {
   /*排行榜*/ }
   .module .module-header .time-red {
     display: inline-block;
-    padding: 0.02rem 0;
+    padding: 0.02rem;
     width: 0.26rem;
     background-color: #ed424b;
     color: #fff;
     font-size: .17rem;
-    text-align: center;
-    margin: 0 0.02rem; }
+    text-align: center; }
   .module .module-header .time-black {
     display: inline-block;
     width: 0.26rem;
-    padding: 0.02rem 0;
+    padding: 0.02rem;
     background: #000;
     color: #fff;
     font-size: .17rem;
-    text-align: center;
-    margin: 0 0.02rem; }
+    text-align: center; }
   .module .module-nav {
     margin-top: 0.25rem;
     text-align: center; }
@@ -271,7 +269,7 @@ nav {
       text-align: center;
       color: #ed424b;
       border: 1px solid #ed424b;
-      font-size: 0.18rem;
+      font-size: 0.2rem;
       width: 22%; }
     .module .module-nav .borlenone {
       border-right: none; }
@@ -313,13 +311,13 @@ nav {
     .module .book-content .book-txt span {
       color: #969ba3;
       vertical-align: -webkit-baseline-middle;
-      font-size: 0.17rem; }
+      font-size: 0.2rem; }
     .module .book-content .book-txt i {
       float: left;
       width: 0.25rem; }
     .module .book-content .book-txt .tag-small {
       font-style: normal;
-      padding: 0 0.06rem;
+      padding: 0.02rem 0.06rem;
       font-size: 0.17rem; }
     .module .book-content .book-txt .gray {
       border: solid #969ba3 0.01rem;
@@ -404,6 +402,8 @@ footer {
   position: fixed;
   bottom: 1.5rem;
   right: 0.5rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0.12rem;
   display: block;

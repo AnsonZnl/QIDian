@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
-<div class="content">
+<div class="content" id="content">
     <!--头部-->
     <header id="header" class="clearfix">
         <a href="#" class="logo-a fl">
@@ -146,10 +146,15 @@
     <div class="module">
         <div class="module-header">
             <h3>限时免费 </h3>
-            <span><a href="" class="time-red">01</a><em>:</em><a href="" class="time-black">19</a><em>:</em><a href=""
-                                                                                                               id="timem"
-                                                                                                               class="time-black">34</a><em>:</em><a
-                    href="" id="times" class="time-black">45</a></span>
+            <span>
+                <a href="" class="time-red">01</a>
+                <em>:</em>
+                <a href="" class="time-black">19</a>
+                <em>:</em>
+                <a href="" id="timem" class="time-black">34</a>
+                <em>:</em>
+                <a href="" id="times" class="time-black">45</a>
+            </span>
             <span class="module-img fr" style="margin-top:0;"><img src="img/icon02.png" alt=""></span>
             <span class="fr">更多</span>
         </div>
@@ -618,7 +623,8 @@
     <div class="module">
         <div class="module-header">
             <h3>猜你喜欢 </h3><span class="fr fz18">换一批</span>
-            <span class="module-img fr" style="margin-top:0;"><img src="img/icon04.png" alt=""  style="width:0.27rem;"></span>
+            <span class="module-img fr" style="margin-top:0;"><img src="img/icon04.png" alt=""
+                                                                   style="width:0.27rem;"></span>
         </div>
         <ol>
             <li class="module-content">
@@ -818,6 +824,29 @@
             }
         }
     }, 1000);
+//滑动到底部使浮层消失
+        var content=document.querySelector("body");
+
+    window.onscroll = function(){
+        var top=document.getElementById("top");
+        var btnBook=document.getElementById("btn-book");
+        var t = content.scrollTop;  //离上方的距离
+        var h = content.clientHeight; //可见宽度
+        console.log(t);
+        console.log(h);
+        if(t==0){
+            top.style.display="none";
+            btnBook.style.display="block";
+        }else if (t>400){
+            top.style.display="block";
+            btnBook.style.display="block";
+        }
+        if (t>2700){
+            top.style.display="none";
+            btnBook.style.display="none";
+        }
+    };
+
 
 </script>
 </body>
