@@ -57,6 +57,22 @@ header {
       background: url(../img/user_book.png) -0.55rem 0.01rem no-repeat;
       background-size: 1rem .4rem; }
 
+.banner {
+  height: 2.5rem;
+  margin: auto;
+  margin-bottom: 0.1rem;
+  overflow: hidden; }
+  .banner ul {
+    width: 34rem;
+    height: 2.5rem;
+    overflow: hidden; }
+    .banner ul li {
+      width: 6rem;
+      height: 2.5rem;
+      float: left; }
+      .banner ul li a img {
+        width: 6rem; }
+
 .search-guide {
   font-size: .2rem;
   line-height: .55rem;
@@ -165,7 +181,7 @@ nav {
     font-size: .25rem; }
   .module-header span {
     font-size: .22rem;
-    margin-left: .2rem;
+    margin-left: .1rem;
     color: #969ba3; }
     .module-header span em {
       color: black;
@@ -233,16 +249,18 @@ nav {
     width: 0.26rem;
     background-color: #ed424b;
     color: #fff;
-    font-size: .15rem;
-    text-align: center; }
+    font-size: .17rem;
+    text-align: center;
+    margin: 0 0.02rem; }
   .module .module-header .time-black {
     display: inline-block;
     width: 0.26rem;
     padding: 0.02rem 0;
     background: #000;
     color: #fff;
-    font-size: .15rem;
-    text-align: center; }
+    font-size: .17rem;
+    text-align: center;
+    margin: 0 0.02rem; }
   .module .module-nav {
     margin-top: 0.25rem;
     text-align: center; }
@@ -273,9 +291,10 @@ nav {
   display: block;
   padding: 0.25rem 0;
   margin: 0 0.25rem; }
-  .module .book-content .book-img {
-    display: inline-block;
+  .module .book-content .book-box {
     width: 1.3rem; }
+    .module .book-content .book-box .book-img {
+      width: 100%; }
   .module .book-content .book-txt {
     width: 4.2rem;
     display: inline-block;
@@ -293,7 +312,7 @@ nav {
       white-space: nowrap; }
     .module .book-content .book-txt span {
       color: #969ba3;
-      vertical-align: middle;
+      vertical-align: -webkit-baseline-middle;
       font-size: 0.17rem; }
     .module .book-content .book-txt i {
       float: left;
@@ -386,27 +405,28 @@ footer {
   bottom: 1.5rem;
   right: 0.5rem;
   box-sizing: border-box;
-  padding: 0.15rem;
+  padding: 0.12rem;
   display: block;
-  width: 0.7rem;
-  height: 0.7rem;
+  width: 0.8rem;
+  height: 0.8rem;
   border-radius: 50%;
   text-align: center;
   color: #fff;
-  background: #ed424b; }
+  background: #ed424b;
+  font-size: 0.2rem; }
 
 #top {
   position: fixed;
   bottom: 0.5rem;
   right: 0.5rem;
   display: block;
-  width: 0.7rem;
-  height: 0.7rem;
+  width: 0.8rem;
+  height: 0.8rem;
   border-radius: 50%;
-  line-height: 0.7rem;
   text-align: center;
   background: #000;
-  opacity: 0.6;
-  transform: rotate(90deg);
-  font-size: 0.4rem;
-  color: #fff; }
+  opacity: 0.6; }
+  #top img {
+    margin-top: 0.2rem;
+    width: 0.35rem;
+    height: 0.35rem; }

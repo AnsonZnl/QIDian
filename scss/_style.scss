@@ -73,7 +73,26 @@ header {
 
 //轮播开始
 .banner {
-
+  height: 2.5rem;
+  margin: auto;
+  margin-bottom: 0.1rem;
+  //padding: .5em .315rem;
+  overflow: hidden;
+  ul {
+    width: 34rem;
+    height: 2.5rem;
+    overflow: hidden;
+    li {
+      width: 6rem;
+      height: 2.5rem;
+      float: left;
+      a{
+        img{
+          width: 6rem;
+        }
+      }
+    }
+  }
 }
 
 //搜索
@@ -212,7 +231,7 @@ nav {
   }
   span {
     font-size: .22rem;
-    margin-left: .2rem;
+    margin-left: .1rem;
     color: #969ba3;
     em {
       color: black;
@@ -297,8 +316,9 @@ nav {
       width: 0.26rem;
       background-color: #ed424b;
       color: #fff;
-      font-size: .15rem;
+      font-size: .17rem;
       text-align: center;
+      margin: 0 0.02rem;
     }
     .time-black {
       display: inline-block;
@@ -306,8 +326,9 @@ nav {
       padding: 0.02rem 0;
       background: #000;
       color: #fff;
-      font-size: .15rem;
+      font-size: .17rem;
       text-align: center;
+      margin: 0 0.02rem;
     }
   }
   /*排行榜*/
@@ -351,9 +372,11 @@ nav {
     display: block;
     padding: 0.25rem 0;
     margin: 0 0.25rem;
-    .book-img {
-      display: inline-block;
+    .book-box{
       width: 1.3rem;
+      .book-img {
+        width: 100%;
+      }
     }
     .book-txt {
       width: 4.2rem;
@@ -374,7 +397,7 @@ nav {
       }
       span {
         color: #969ba3;
-        vertical-align: middle;
+        vertical-align: -webkit-baseline-middle;
         font-size: 0.17rem;
       }
       i {
@@ -417,113 +440,120 @@ nav {
     }
   }
 }
+
 //footer
-.footer-top{
-height: 0.8rem;
-line-height: 0.8rem;
-font-size: 0.22rem;
+.footer-top {
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.22rem;
   text-align: center;
   border-bottom: 1px solid #f0f1f2;
-span{
-  color: black;
-  font-weight: 700;
+  span {
+    color: black;
+    font-weight: 700;
+  }
+  a {
+    color: #4284ed;
+  }
 }
-a{
-  color: #4284ed;
-}
-}
-footer{
-  padding:0 0.25rem;
+
+footer {
+  padding: 0 0.25rem;
   text-align: center;
 
-  .footer-link{
+  .footer-link {
     .dark {
       color: #33373d;
     }
-    a{
+    a {
       display: inline-block;
       width: 18%;
       padding: 0.2rem 0;
       text-align: center;
-      font-size:0.22rem;
+      font-size: 0.22rem;
       color: #969ba3;
     }
   }
-  .footer-copy{
+  .footer-copy {
     color: #969ba3;
     font-size: 0.2rem;
   }
-  .footer-copy{
+  .footer-copy {
     padding-top: 0.2rem;
     padding-bottom: 0.15rem;
   }
 }
+
 //footer-app
-.footerApp{
+.footerApp {
   background-color: #f6f7f9;
-  padding:0.2rem 0.25rem;
-  .fl{
-    a{
+  padding: 0.2rem 0.25rem;
+  .fl {
+    a {
       width: 0.65rem;
       display: inline-block;
       margin-right: 0.2rem;
     }
-    div{
-      p{
-        height:0.3rem;
+    div {
+      p {
+        height: 0.3rem;
         line-height: 0.3rem;
         font-size: 0.22rem;
       }
-      p:nth-child(1){
+      p:nth-child(1) {
         font-weight: 700;
         color: black;
       }
-      p:nth-child(2){
+      p:nth-child(2) {
         color: #969ba3;
-        font-size:0.2rem;
+        font-size: 0.2rem;
       }
     }
   }
-  .fr{
-    a{
+  .fr {
+    a {
       display: block;
       margin-top: 0.03rem;
       color: #fff;
-      font-size:0.24rem;
+      font-size: 0.24rem;
       background: #ed424b;
       padding: 0.07rem 0.3rem;
       border-radius: 0.2rem;
     }
   }
 }
+
 //浮层
-#btn-book{
+#btn-book {
   position: fixed;
-  bottom:1.5rem;
-  right:0.5rem;
+  bottom: 1.5rem;
+  right: 0.5rem;
   box-sizing: border-box;
-  padding: 0.15rem;
+  padding: 0.12rem;
   display: block;
-  width: 0.7rem;
-  height: 0.7rem;
+  width: 0.8rem;
+  height: 0.8rem;
   border-radius: 50%;
   text-align: center;
   color: #fff;
   background: #ed424b;
+  font-size: 0.2rem;
 }
-#top{
+
+#top {
   position: fixed;
-  bottom:0.5rem;
-  right:0.5rem;
+  bottom: 0.5rem;
+  right: 0.5rem;
   display: block;
-  width: 0.7rem;
-  height: 0.7rem;
+  width: 0.8rem;
+  height: 0.8rem;
   border-radius: 50%;
-  line-height: 0.7rem;
   text-align: center;
   background: #000;
-  opacity:0.6;
-  transform:rotate(90deg);
-  font-size:0.4rem;
-  color: #fff;
+  opacity: 0.6;
+  img {
+    margin-top: 0.2rem;
+    width: 0.35rem;
+    height: 0.35rem;
+  }
 }
