@@ -280,9 +280,12 @@ nav {
       border-right: none; }
     .module .module-nav .w30 {
       width: 31%; }
+<<<<<<< HEAD
     .module .module-nav .w23 {
       width: 23%;
       padding: 0.12rem 0.25rem; }
+=======
+>>>>>>> 41f0adecdadccb7b6c68cf4e1f484f074d00d6c9
     .module .module-nav .borleft {
       border-top-left-radius: 0.1rem;
       border-bottom-left-radius: 0.1rem; }
