@@ -112,7 +112,7 @@ nav {
       width: .46rem;
       height: .5rem; }
     nav a .nav-i-bg1 {
-      background-position: 96% 48%; }
+      background-position: 98% 48%; }
     nav a .nav-i-bg2 {
       background-position: 0 50%; }
     nav a .nav-i-bg3 {
@@ -144,7 +144,6 @@ nav {
     margin: auto; }
     .module .topic-ad span {
       font-size: .19rem;
-      line-height: .5rem;
       display: inline-block; }
     .module .topic-ad .topic-ad-left {
       font-size: .2rem;
@@ -203,6 +202,12 @@ nav {
   width: 1.5rem;
   text-align: left;
   font-size: 0.23rem; }
+  .slide-item .charge_box {
+    position: relative; }
+    .slide-item .charge_box em {
+      position: absolute;
+      width: 0.6rem;
+      top: 0; }
   .slide-item a {
     display: block;
     padding: 0 0.1rem; }
@@ -269,12 +274,15 @@ nav {
       text-align: center;
       color: #ed424b;
       border: 1px solid #ed424b;
-      font-size: 0.2rem;
-      width: 22%; }
+      font-size: 0.22rem;
+      width: 23%; }
     .module .module-nav .borlenone {
       border-right: none; }
     .module .module-nav .w30 {
-      width: 30%; }
+      width: 31%; }
+    .module .module-nav .w23 {
+      width: 23%;
+      padding: 0.12rem 0.25rem; }
     .module .module-nav .borleft {
       border-top-left-radius: 0.1rem;
       border-bottom-left-radius: 0.1rem; }
@@ -284,6 +292,20 @@ nav {
     .module .module-nav .hover {
       background: #ed424b;
       color: #fff; }
+  .module .phb_content {
+    position: relative;
+    min-height: 3rem; }
+  .module .phb_box {
+    width: 6.3rem;
+    position: absolute;
+    top: 0; }
+  .module .fltj_content1, .module .fltj_content2 {
+    position: relative;
+    min-height: 3rem; }
+  .module .fltj_box1, .module .fltj_box2 {
+    width: 6.3rem;
+    position: absolute;
+    top: 0; }
 
 .module .book-content {
   display: block;
@@ -297,6 +319,8 @@ nav {
     width: 4.2rem;
     display: inline-block;
     margin-left: 0.2rem; }
+    .module .book-content .book-txt .book-meta {
+      margin-top: 0.15rem; }
     .module .book-content .book-txt h4 {
       font-size: 0.27rem;
       color: black; }
@@ -311,14 +335,18 @@ nav {
     .module .book-content .book-txt span {
       color: #969ba3;
       vertical-align: -webkit-baseline-middle;
-      font-size: 0.2rem; }
+      font-size: 0.2rem;
+      float: left; }
     .module .book-content .book-txt i {
       float: left;
       width: 0.25rem; }
+      .module .book-content .book-txt i img {
+        display: block; }
     .module .book-content .book-txt .tag-small {
       font-style: normal;
       padding: 0.02rem 0.06rem;
-      font-size: 0.17rem; }
+      font-size: 0.17rem;
+      justify-content: center; }
     .module .book-content .book-txt .gray {
       border: solid #969ba3 0.01rem;
       color: #969ba3; }
@@ -413,7 +441,8 @@ footer {
   text-align: center;
   color: #fff;
   background: #ed424b;
-  font-size: 0.2rem; }
+  font-size: 0.2rem;
+  justify-content: center; }
 
 #top {
   position: fixed;
@@ -430,3 +459,88 @@ footer {
     margin-top: 0.2rem;
     width: 0.35rem;
     height: 0.35rem; }
+
+.wrap .logo {
+  background: url(../img/log/logo.png) no-repeat;
+  width: 3rem;
+  height: 1rem;
+  margin: 1.5rem auto .5rem;
+  background-size: 95%; }
+
+.login-wrap {
+  padding: 0 0.4rem; }
+  .login-wrap form ::-webkit-input-placeholder {
+    color: #c0c0c0; }
+  .login-wrap form div {
+    padding: 0.1rem 0;
+    background: #F6F7F9;
+    margin-bottom: 0.25rem;
+    border-radius: 0.1rem; }
+    .login-wrap form div label {
+      display: inline-block;
+      width: 0.31rem;
+      background: #F6F7F9;
+      margin-left: 0.2rem;
+      margin-top: 0.14rem; }
+      .login-wrap form div label img {
+        width: 100%;
+        z-index: 2; }
+    .login-wrap form div #pas {
+      display: inline-block;
+      height: 0.6rem;
+      background: #F6F7F9;
+      vertical-align: middle;
+      width: 82%;
+      padding: .1rem 0;
+      line-height: .2rem;
+      font-size: 0.24rem;
+      text-indent: 0.2rem; }
+    .login-wrap form div #user {
+      display: inline-block;
+      height: 0.6rem;
+      background: #F6F7F9;
+      vertical-align: middle;
+      width: 82%;
+      padding: .1rem 0;
+      line-height: .2rem;
+      font-size: 0.24rem;
+      text-indent: 0.2rem; }
+    .login-wrap form div i {
+      display: inline-block;
+      width: 0.35rem;
+      margin-top: 0.18rem; }
+  .login-wrap form button {
+    display: block;
+    width: 100%;
+    height: 0.7rem;
+    border-color: rgba(255, 0, 0, 0.2);
+    border: 1px;
+    background: rgba(255, 0, 0, 0.2);
+    margin: 0.5rem 0 0.1rem;
+    line-height: 0.7rem;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 0.26rem; }
+  .login-wrap p {
+    margin-top: 0.19rem;
+    font-size: .23rem; }
+  .login-wrap ul {
+    padding: 0  0.5rem;
+    text-align: center; }
+    .login-wrap ul li {
+      display: inline-block;
+      padding: 0.5rem;
+      text-align: center; }
+      .login-wrap ul li em {
+        display: block;
+        width: 0.8rem; }
+      .login-wrap ul li p {
+        margin-top: 0.1rem;
+        color: #000; }
+  .login-wrap .other {
+    text-align: center; }
+    .login-wrap .other a {
+      display: inline-block;
+      margin: auto;
+      padding: .1rem;
+      width: 1rem; }

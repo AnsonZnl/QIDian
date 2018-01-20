@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>账号登录——起点中文网_阅文集团旗下网站</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name='viewport' content="width=device-width,initial-scale=1.0,user-scalable=no,
+	      maximum-scale=1.0,
+	      minimum-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<style>
+
+</style>
+<body>
+<div class="wrap">
+    <section class="logo"></section>
+</div>
+<section class="login-wrap">
+    <form action="">
+        <div class="clearfix">
+            <label class="fl"><img src="img/log/user.png" alt=""></label>
+            <input class="fl" type="text" id="user" placeholder="起点账号/手机号/邮箱">
+        </div>
+        <div class="clearfix">
+            <label class="fl"><img src="img/log/pas.png" alt=""></label>
+            <input class="fl" type="password" id="pas" placeholder="密码">
+            <i id="type_pws"><img id="pwsImg" src="img/log/typs_pws.png" alt=""></i>
+        </div>
+        <button disabled="disabled" id="btn">登录</button>
+        <p class="clearfix">
+            <a href="" class="fl" style="color: #000;">忘记密码</a>
+            <a href="" class="fr" style="color: #2581FA;">手机注册</a>
+        </p>
+    </form>
+    <ul>
+        <li>
+            <a href="">
+                <em><img src="img/log/qq.png" alt=""></em>
+                <p>QQ登录</p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <em><img src="img/log/sms.png" alt=""></em>
+                <p>短信登录</p>
+            </a>
+        </li>
+    </ul>
+    <p style="text-align: center"><span>更多方式</span></p>
+    <section class="other">
+        <a href=""><img src="img/log/sina.png" alt=""></a>
+        <a href=""><img src="img/log/alipay.png" alt=""></a>
+        <a href=""><img src="img/log/baidu.png" alt=""></a>
+    </section>
+</section>
+</body>
+<script src="js/fontSizeSet.js"></script>
+<script>
+    var typePws=document.getElementById("type_pws");
+    var pas=document.getElementById("pas");
+    var user=document.getElementById("user");
+    var btn=document.getElementById("btn");
+    var pwsImg=document.getElementById("pwsImg");
+    typePws.onclick=function(){
+        if(pas.type=="text"){
+            pas.type="password";
+            pwsImg.src="img/log/typs_pws.png";
+        }else {
+            pas.type="text";
+            pwsImg.src="img/log/typs_txt.png";
+        }
+    };
+    pas.onkeydown =function(){
+        if (user.value!=""||pas.value!=""){
+            btn.removeAttribute('disabled');
+            btn.style.background="#ED424B";
+        }
+    }
+</script>
+</html>

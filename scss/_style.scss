@@ -141,7 +141,7 @@ nav {
       height: .5rem;
     }
     .nav-i-bg1 {
-      background-position: 96% 48%;
+      background-position: 98% 48%;
     }
     .nav-i-bg2 {
       background-position: 0 50%;
@@ -185,7 +185,7 @@ nav {
     margin: auto;
     span {
       font-size: .19rem;
-      line-height: .5rem;
+      //line-height: .5rem;
       display: inline-block;
     }
     .topic-ad-left {
@@ -254,11 +254,20 @@ nav {
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
 }
-
+//限时免费
 .slide-item {
   width: 1.5rem;
   text-align: left;
   font-size: 0.23rem;
+  //边角
+  .charge_box{
+    position: relative;
+    em{
+      position: absolute;
+      width: 0.6rem;
+      top:0;
+    }
+  }
   a {
     display: block;
     padding: 0 0.1rem;
@@ -340,14 +349,18 @@ nav {
       text-align: center;
       color: #ed424b;
       border: 1px solid #ed424b;
-      font-size: 0.2rem;
-      width: 22%;
+      font-size: 0.22rem;
+      width: 23%;
     }
     .borlenone {
       border-right: none;
     }
     .w30 {
-      width: 30%;
+      width: 31%;
+    }
+    .w23{
+      width: 23%;
+      padding: 0.12rem 0.25rem;
     }
     .borleft {
       border-top-left-radius: 0.1rem;
@@ -362,6 +375,28 @@ nav {
       color: #fff;
     }
   }
+  //选项卡1 排行榜
+  .phb_content{
+    position: relative;
+    min-height: 3rem;
+  }
+  .phb_box{
+    width: 6.3rem;
+    position: absolute;
+    top:0;
+  }
+
+  //选项卡1 分类推荐
+  .fltj_content1,.fltj_content2{
+    position: relative;
+    min-height: 3rem;
+  }
+  .fltj_box1,.fltj_box2{
+    width: 6.3rem;
+    position: absolute;
+    top:0;
+  }
+
 }
 
 //新书抢先
@@ -380,6 +415,9 @@ nav {
       width: 4.2rem;
       display: inline-block;
       margin-left: 0.2rem;
+      .book-meta{
+        margin-top: 0.15rem;
+      }
       h4 {
         font-size: 0.27rem;
         color: black;
@@ -397,15 +435,20 @@ nav {
         color: #969ba3;
         vertical-align: -webkit-baseline-middle;
         font-size: 0.2rem;
+        float: left;
       }
       i {
         float: left;
         width: 0.25rem;
+        img{
+          display: block;
+        }
       }
       .tag-small {
         font-style: normal;
         padding: 0.02rem 0.06rem;
         font-size: 0.17rem;
+        justify-content: center;
       }
       .gray {
         border: solid #969ba3 0.01rem;
@@ -538,6 +581,7 @@ footer {
   color: #fff;
   background: #ed424b;
   font-size: 0.2rem;
+  justify-content: center;
 }
 
 #top {
@@ -555,5 +599,110 @@ footer {
     margin-top: 0.2rem;
     width: 0.35rem;
     height: 0.35rem;
+  }
+}
+//login
+
+.wrap{
+  .logo{
+    background: url(../img/log/logo.png) no-repeat;
+    width: 3rem;
+    height: 1rem;
+    margin: 1.5rem auto .5rem;
+    background-size: 95%;
+  }
+}
+.login-wrap {
+  padding: 0 0.4rem;
+  form{
+    ::-webkit-input-placeholder { color:#c0c0c0; }
+    div{
+      padding: 0.1rem 0;
+      background: #F6F7F9;
+      margin-bottom: 0.25rem;
+      border-radius: 0.1rem;
+      label{
+        display: inline-block;
+        width: 0.31rem;
+        background: #F6F7F9;
+        margin-left: 0.2rem;
+        margin-top: 0.14rem;
+        img{
+          width: 100%;
+          z-index:2;
+        }
+      }
+      #pas{
+        display: inline-block;
+        height: 0.6rem;
+        background: #F6F7F9;
+        vertical-align: middle;
+        width: 82%;
+        padding: .1rem 0;
+        line-height: .2rem;
+        font-size: 0.24rem;
+        text-indent: 0.2rem;
+      }
+      #user{
+        display: inline-block;
+        height: 0.6rem;
+        background: #F6F7F9;
+        vertical-align: middle;
+        width: 82%;
+        padding: .1rem 0;
+        line-height: .2rem;
+        font-size:0.24rem ;
+        text-indent: 0.2rem;
+      }
+
+      i{
+        display: inline-block;
+        width: 0.35rem;
+        margin-top: 0.18rem;
+      }
+    }
+    button{
+      display: block;
+      width: 100%;
+      height: 0.7rem;
+      border-color: rgba(255, 0, 0, 0.2);
+      border:1px;
+      background: rgba(255, 0, 0, 0.2);
+      margin: 0.5rem 0 0.1rem;
+      line-height: 0.7rem;
+      border-radius: 100px;
+      color: #fff;
+      font-size: 0.26rem;
+    }
+  }
+  p{
+    margin-top: 0.19rem;
+    font-size: .23rem;
+  }
+  ul{
+    padding:  0  0.5rem;
+    text-align: center;
+    li{
+      display: inline-block;
+      padding: 0.5rem;
+      text-align: center;
+      em{
+        display: block;
+        width: 0.8rem;
+      }
+      p{
+        margin-top: 0.1rem;
+        color: #000;
+      }
+    }
+  }
+  .other{
+    text-align: center;
+    a{
+      display: inline-block;
+      margin: auto;
+      padding:.1rem;
+      width: 1rem;
+    }
   }
 }
